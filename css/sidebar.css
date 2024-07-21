@@ -1,0 +1,85 @@
+aside {
+	color: white;
+	display: flex;
+	background-color: black;
+	width: 300px;
+	flex-direction: column;
+	position: fixed;
+	height: 100%;
+	transform: translateX(-300px);
+	transition: transform ease 0.7s;
+}
+
+aside.active {
+	transform: translateX(0);
+}
+
+aside > div {
+	padding: 15px 20px;
+	width: 100%;
+	background-color: rgb(35, 35, 35);
+	border: 1px solid black;
+}
+
+.new-item {
+	padding: 15px 20px;
+	width: 100%;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.new-item > span {
+	font-size: larger;
+	font-weight: 600;
+	margin: 0px 5px;
+}
+
+.menu-label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-label:hover {
+	cursor: pointer;
+}
+
+.menu-content {
+	opacity: 0;
+	max-height: 0px;
+	transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+	overflow: hidden;
+}
+
+.menu-content div {
+	padding: 8px 0px;
+}
+
+.menu-item.open .menu-content {
+	opacity: 1;
+	max-height: 1000px;
+	padding: 20px 20px;
+	padding-bottom: 0px;
+}
+
+.menu-item.open .fa-angle-down {
+	transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1500px) {
+	aside {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	aside {
+		width: 100%;
+		top: 0;
+		height: auto;
+		margin-top: 55px;
+		padding-bottom: 60px;
+		border-radius: 10px;
+		transform: translateY(-297px);
+	}
+}

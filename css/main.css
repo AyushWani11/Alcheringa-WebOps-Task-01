@@ -1,0 +1,194 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+p {
+	margin: 5px 0px;
+}
+
+.main-page {
+	display: flex;
+	padding-top: 55px;
+	z-index: 1;
+}
+
+.main {
+	width: 100%;
+	transition: margin ease 0.7s;
+}
+
+.main.active {
+	margin-left: 300px;
+}
+
+.user h1 {
+	margin: 0;
+	font-weight: lighter;
+	font-size: 3em;
+}
+
+.user {
+	background-color: white;
+	padding: 50px;
+	padding-bottom: 20px;
+}
+
+.profile {
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+}
+
+.profile img {
+	height: 200px;
+	border-radius: 100px;
+}
+
+.profile h1 {
+	margin: 30px;
+}
+
+.table-wrapper {
+	background-color: rgb(235, 235, 235);
+}
+
+.table {
+	padding: 10px 30px;
+	margin: 0px 30px;
+	background-color: white;
+}
+
+.table > p {
+	color: rgb(90, 90, 90);
+}
+
+.danger {
+	margin: 20px 0px;
+	padding: 10px;
+	background-color: rgba(255, 0, 0, 0.103);
+	border-radius: 5px;
+	border: 1px solid red;
+	color: rgb(113, 0, 0);
+}
+
+.danger.success {
+	border: 1px solid green;
+	color: rgb(0, 113, 30);
+	background-color: rgba(0, 255, 42, 0.103);
+}
+
+.danger.warning {
+	border: 1px solid rgb(255, 234, 0);
+	color: rgb(111, 113, 0);
+	background-color: rgba(238, 255, 0, 0.103);
+}
+
+.danger span {
+	margin: 0px 10px;
+}
+
+.grid-table {
+	display: grid;
+	border-radius: 5px;
+	width: 100%;
+	grid-template-columns: 1.1fr 0.9fr 1.1fr 0.9fr;
+	overflow: hidden;
+}
+
+.grid-table span {
+	padding: 10px;
+}
+
+.grid-table > span {
+	padding: 10px 20px;
+	border: 1px solid rgb(230, 230, 230);
+	font-size: large;
+}
+
+.table-header {
+	background-color: rgb(200, 199, 199);
+	font-weight: bold;
+}
+
+.dark {
+	background-color: rgb(242, 242, 242);
+}
+
+.edit {
+	margin-right: 10px;
+	border: none;
+	background-color: blue;
+	color: white;
+	padding: 5px 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.del {
+	border: none;
+	background-color: rgb(230, 128, 3);
+	color: rgb(255, 255, 255);
+	padding: 5px 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.del:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgb(230, 128, 3);
+	transform: scale(1.05);
+}
+
+.edit:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 5px blue;
+	transform: scale(1.05);
+}
+
+span > input {
+	width: 100%;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1150px) {
+	.grid-table {
+		grid-template-columns: 0.8fr 0.5fr 1fr 0.8fr;
+	}
+	.grid-table > span {
+		font-size: 1em;
+	}
+	.main.active {
+		margin-left: 250px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.grid-table {
+		grid-template-columns: 0.8fr 0.4fr 1fr 0.8fr;
+	}
+	.grid-table > span {
+		font-size: 1em;
+	}
+	.main.active {
+		margin-top: 297px;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.grid-table {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.main.active {
+		margin-top: 297px;
+		margin-left: 0px;
+	}
+	.last {
+		grid-column: span 3;
+		text-align: center;
+	}
+	.last-header {
+		display: none;
+	}
+}
