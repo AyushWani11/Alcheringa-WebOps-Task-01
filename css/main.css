@@ -186,6 +186,11 @@ span > input {
 		word-wrap: break-word;
 		white-space: normal;
 	}
+
+	.grid-table span {
+		font-size: 0.7em;
+	}
+	
 	.main.active {
 		margin-top: 297px;
 		margin-left: 0px;
