@@ -178,7 +178,7 @@ span > input {
 
 @media screen and (max-width: 1000px) {
 	.grid-table {
-		grid-template-columns: repeat(3, 33.33%);
+		grid-template-columns: repeat(3, 33%);
 	}
 	.main.active {
 		margin-top: 297px;
