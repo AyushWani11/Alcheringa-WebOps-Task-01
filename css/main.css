@@ -207,4 +207,13 @@ span > input {
 		height: 150px;
 		border-radius: 100px;
 	}
+	.user {
+		padding: 20px;
+		padding-bottom: 20px;
+	}
+	.table {
+		padding: 10px 10px;
+		margin: 0px 10px;
+		background-color: white;
+	}
 }
