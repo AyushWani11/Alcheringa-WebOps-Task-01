@@ -97,8 +97,6 @@ p {
 	width: 100%;
 	grid-template-columns: 1.1fr 0.9fr 1.1fr 0.9fr;
 	overflow: hidden;
-	word-wrap: break-word;
-        white-space: normal;
 }
 
 .grid-table span {
@@ -109,6 +107,8 @@ p {
 	padding: 10px 20px;
 	border: 1px solid rgb(230, 230, 230);
 	font-size: large;
+	word-wrap: break-word;
+	white-space: normal;
 }
 
 .table-header {
@@ -171,6 +171,8 @@ span > input {
 	}
 	.grid-table > span {
 		font-size: 1em;
+		word-wrap: break-word;
+		white-space: normal;
 	}
 	.main.active {
 		margin-top: 297px;
@@ -180,7 +182,9 @@ span > input {
 
 @media screen and (max-width: 1000px) {
 	.grid-table {
-		grid-template-columns: repeat(3, 33%);
+		grid-template-columns: repeat(3, 33.33%);
+		word-wrap: break-word;
+		white-space: normal;
 	}
 	.main.active {
 		margin-top: 297px;
