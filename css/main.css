@@ -178,7 +178,7 @@ span > input {
 
 @media screen and (max-width: 1000px) {
 	.grid-table {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, 33.33%);
 	}
 	.main.active {
 		margin-top: 297px;
@@ -190,5 +190,9 @@ span > input {
 	}
 	.last-header {
 		display: none;
+	}
+	.profile img {
+		height: 150px;
+		border-radius: 100px;
 	}
 }
