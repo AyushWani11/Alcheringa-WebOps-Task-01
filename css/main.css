@@ -97,6 +97,8 @@ p {
 	width: 100%;
 	grid-template-columns: 1.1fr 0.9fr 1.1fr 0.9fr;
 	overflow: hidden;
+	word-wrap: break-word;
+        white-space: normal;
 }
 
 .grid-table span {
